@@ -121,101 +121,102 @@ const Navbar = () => {
         {/* use Mobile */}
         {show && (
           <>
-            <div className="h-screen w-56 fixed right-0 top-0 overflow-x-auto bg-emerald-400 transition-transform transform ease-in duration-300   z-50 ease-in duration-300
+            <div
+              className="w-64 fixed h-screen top-0 right-0 bg-orange-600 overflow-x-hidden pt-16 pl-8 pr-8
             
-            ">
+            "
+            >
               <div onClick={() => setShow(false)}>
-                <div className="cross">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 18 18 6M6 6l12 12"
-                  />
-                </svg>
+                <div className="cross flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M6 18 18 6M6 6l12 12"
+                    />
+                  </svg>
                 </div>
 
-
                 <div className="listing xl:hidden lg:hidden md:block sm:w-100 block  ">
-          <ul className="flex items-center flex-col gap-5">
-            <li>
-              <Link
-                href="/"
-                className={`${
-                  param === "/"
-                    ? "text-base	 font-semibold text-green-600 font-Outfit text-base	"
-                    : "text-base	 font-normal font-Outfit"
-                }`}
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/about"
-                className={`${
-                  param === "/about"
-                    ? "text-base	 font-semibold text-green-600 font-Outfit text-base	"
-                    : "text-base	 font-normal font-Outfit"
-                }`}
-              >
-                About
-              </Link>
-            </li>
-            <li>
-              <Link
-                href=""
-                className={`${
-                  param === "/blog"
-                    ? "text-base	 font-semibold text-green-600 font-Outfit"
-                    : "text-base	 font-normal font-Outfit"
-                }`}
-              >
-                Blogs
-              </Link>
-            </li>
-            <li>
-              <Link
-                href=""
-                className={`${
-                  param === "/contact"
-                    ? "text-base	 font-semibold text-green-600 font-Outfit"
-                    : "text-base	 font-normal font-Outfit"
-                }`}
-              >
-                Contact us
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="xl:hidden lg:hidden md:block sm:w-100 block">
-          <ul className="flex items-center justify-center gap-5">
-            <li>
-              <a
-                href=""
-                className="flex items-center py-2 px-4   text-sm font-semibold text-black hover:bg-green-400 hover:text-white hover:transition-all transition-all hover:rounded-lg "
-              >
-                Login
-              </a>
-            </li>
-            <li>
-              <a
-                href=""
-                className="flex items-center py-2 px-4 rounded-lg bg-green-400 text-sm font-semibold text-white "
-              >
-                Sign Up
-              </a>
-            </li>
-            {/* <li><a href="" className='flex items-center py-2 px-4 rounded-lg bg-indigo-500 text-sm  font-semibold text-white '>Sign-up</a></li> */}
-          </ul>
-        </div>
+                  <ul className="flex items-center flex-col gap-5">
+                    <li>
+                      <Link
+                        href="/"
+                        className={`${
+                          param === "/"
+                            ? "text-base	 font-semibold text-green-600 font-Outfit text-base	"
+                            : "text-base	 font-normal font-Outfit"
+                        }`}
+                      >
+                        Home
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/about"
+                        className={`${
+                          param === "/about"
+                            ? "text-base	 font-semibold text-green-600 font-Outfit text-base	"
+                            : "text-base	 font-normal font-Outfit"
+                        }`}
+                      >
+                        About
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href=""
+                        className={`${
+                          param === "/blog"
+                            ? "text-base	 font-semibold text-green-600 font-Outfit"
+                            : "text-base	 font-normal font-Outfit"
+                        }`}
+                      >
+                        Blogs
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href=""
+                        className={`${
+                          param === "/contact"
+                            ? "text-base	 font-semibold text-green-600 font-Outfit"
+                            : "text-base	 font-normal font-Outfit"
+                        }`}
+                      >
+                        Contact us
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="xl:hidden lg:hidden md:block sm:w-100 block">
+                  <ul className="flex items-center justify-center gap-5">
+                    <li>
+                      <a
+                        href=""
+                        className="flex items-center py-2 px-4   text-sm font-semibold text-black hover:bg-green-400 hover:text-white hover:transition-all transition-all hover:rounded-lg "
+                      >
+                        Login
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        className="flex items-center py-2 px-4 rounded-lg bg-green-400 text-sm font-semibold text-white "
+                      >
+                        Sign Up
+                      </a>
+                    </li>
+                    {/* <li><a href="" className='flex items-center py-2 px-4 rounded-lg bg-indigo-500 text-sm  font-semibold text-white '>Sign-up</a></li> */}
+                  </ul>
+                </div>
               </div>
             </div>
           </>
