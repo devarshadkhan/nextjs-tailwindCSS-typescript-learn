@@ -17,6 +17,7 @@ export interface IArticleData {
 
 export interface ICategoryAttributes {
     Title: string;
+    slug:string
 }
 export interface IArticleAttributes {
     description:string
