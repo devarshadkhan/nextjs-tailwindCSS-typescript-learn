@@ -7,7 +7,7 @@ const Footer = () => {
   const param = usePathname();
   return (
     <>
-      <footer className=" pt-4  fixed bottom-0 w-full left-0 bg-white mb-2 ">
+      <footer className=" py-5   bottom-0 w-full left-0 bg-white mb-2 ">
         <div className="container mx-auto flex  items-center gap-3">
           <Link href={"/"}>
             <div className="flex gap-2 items-center">
