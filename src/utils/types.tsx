@@ -36,6 +36,7 @@ export interface IArticleAttributes {
   description: string;
   Title: string;
   image: IImageData;
+  slug:string
 }
 
 export interface IImageData {

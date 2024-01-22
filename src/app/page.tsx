@@ -37,7 +37,7 @@ export default async function Home() {
       <div className="wrp py-6">
         <NavigationTabs categories={fetchDataCategories.data} />
       </div>
-      <div className="wrp_blog flex gap-5 flex-wrap ">
+      <div className="wrp_blog grid lg:grid-cols-2 grid-gap gap-16 mt-16 ">
         {fetchArticles.data.map((article) => {
           return (
             <>

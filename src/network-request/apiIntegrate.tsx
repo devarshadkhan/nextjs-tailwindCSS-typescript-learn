@@ -16,6 +16,8 @@ export const _apicategory = async () => {
 export const _fetchAPI = async (params:string) => {
     try {
       const response = await axiosInstance.get(`api/${params}`);
+      // console.log("rrrrrrrrrrr",response);
+      
       return response;
     } catch (error) {
       console.error("Error fetching posts:", error);
