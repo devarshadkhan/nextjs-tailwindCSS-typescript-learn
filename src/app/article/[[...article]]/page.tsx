@@ -35,7 +35,7 @@ const page = async({params}:IPropTypes) => {
       
   return (
     <>
-    <h1>{qus}</h1>
+    {/* <h1>{qus}</h1> */}
     <br />
     <br />
     {/* <h1>{params.article}</h1> */}

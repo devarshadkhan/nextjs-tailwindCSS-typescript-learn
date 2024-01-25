@@ -122,7 +122,7 @@ const Navbar = () => {
         {show && (
           <>
             <div
-              className="w-64 fixed h-screen top-0 right-0 bg-orange-600 overflow-x-hidden pt-16 pl-8 pr-8
+              className="w-64 fixed z-10 h-screen top-0 right-0 bg-orange-600 overflow-x-hidden pt-16 pl-8 pr-8
             
             "
             >
@@ -182,6 +182,20 @@ const Navbar = () => {
                         Blogs
                       </Link>
                     </li>
+                    {/* <li>
+                      <Link
+                        href=""
+                        className={`${
+                          param === "/blog"
+                            ? "text-base	 font-semibold text-green-600 font-Outfit"
+                            : "text-base	 font-normal font-Outfit"
+                        }`}
+                      >
+                        Article
+
+
+                      </Link>
+                    </li> */}
                     <li>
                       <Link
                         href=""
@@ -196,28 +210,29 @@ const Navbar = () => {
                     </li>
                   </ul>
                 </div>
-                <div className="xl:hidden lg:hidden md:block sm:w-100 block">
-                  <ul className="flex items-center justify-center gap-5">
-                    <li>
-                      <a
-                        href=""
-                        className="flex items-center py-2 px-4   text-sm font-semibold text-black hover:bg-green-400 hover:text-white hover:transition-all transition-all hover:rounded-lg "
-                      >
-                        Login
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href=""
-                        className="flex items-center py-2 px-4 rounded-lg bg-green-400 text-sm font-semibold text-white "
-                      >
-                        Sign Up
-                      </a>
-                    </li>
-                    {/* <li><a href="" className='flex items-center py-2 px-4 rounded-lg bg-indigo-500 text-sm  font-semibold text-white '>Sign-up</a></li> */}
-                  </ul>
-                </div>
+                
               </div>
+              {false 
+              && <><div className="xl:hidden lg:hidden md:block sm:w-100 block">
+              <ul className="flex items-center justify-center gap-5">
+                <li>
+                  <a
+                    href=""
+                    className="flex items-center py-2 px-4   text-sm font-semibold text-black hover:bg-green-400 hover:text-white hover:transition-all transition-all hover:rounded-lg "
+                  >
+                    Login
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href=""
+                    className="flex items-center py-2 px-4 rounded-lg bg-green-400 text-sm font-semibold text-white "
+                  >
+                    Sign Up
+                  </a>
+                </li>
+              </ul>
+            </div></>}
             </div>
           </>
         )}

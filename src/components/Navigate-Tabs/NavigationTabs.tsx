@@ -17,8 +17,8 @@ const NavigationTabs: NextPage<IPropTypes> = ({ categories }) => {
 
   return (
     <>
-      <div className="nantabs my-4 flex items-center justify-between border-b-2 border-gray-100 ">
-        <ul className="list-none flex gap-5">
+      <div className=" my-4 flex items-center justify-between border-b-2 border-gray-100 xl:overflow-y-hidden lg:overflow-y-hidden md:overflow-y-scroll overflow-y-scroll ">
+        <ul className="list-none flex xl:gap-5 lg:gap-5 md:gap-4 gap-3">
           <li className={classNames(`${router === "/" ? "border-b-4 border-green-500 rounded-sm pb-5 text-green-500 font-semibold	":"rounded-sm pb-5 text-stone-500 font-semibold	"}`)}>
             <Link href={"/"} className="">
               Recent

@@ -47,7 +47,7 @@ const Category =async ({params}:IPropTypes) => {
     <>
 
 <div className="wrp py-6">
-  {qus}
+  {/* {qus} */}
         <NavigationTabs categories={fetchDataCategories.data} />
         <div className="wrp_blog grid lg:grid-cols-2 grid-gap gap-16 mt-16 ">
         {fetchArticles.data.map((article) => {

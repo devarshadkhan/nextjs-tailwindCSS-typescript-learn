@@ -11,14 +11,14 @@ interface IPropTypes {
 const BlogCard: NextPage<IPropTypes> = ({ article }) => {
   // console.log("article", article.attributes.image.data[0].attributes);
   // console.log("Image URL:", `http://localhost:1337${article.attributes.image.data[0].attributes.url}`);
-
+ 
 
   return (
     <>
       <Link href={`/article/${article.attributes.slug}`}>
-        <div className="flex items-center justify-center">
-          <div className="relative flex w-full max-w-[48rem] h-full flex-row rounded-xl bg-slate-200 bg-clip-border text-gray-700 shadow-md">
-            <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
+        <div className="flex items-center justify-center flex-wrap">
+          <div className="relative flex w-full max-w-[48rem] h-full xl:flex-row lg:flex-row md:flex-row rounded-xl bg-slate-200 bg-clip-border text-gray-700 shadow-md">
+            <div className="relative m-0 xl:w-2/5 lg:w-2/5 md:w-2/5 w-full shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700  ">
               <img
                 src={`http://localhost:1337${article.attributes.image.data[0].attributes.url}`}
                 alt="image"
